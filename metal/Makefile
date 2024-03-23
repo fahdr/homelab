@@ -11,12 +11,12 @@ default: boot cluster
 boot: ~/.ssh/id_ed25519
 	ansible-playbook \
 		--inventory inventories/${env}.yml \
-		boot.yml
+		boot.yml -vv
 
 cluster:
 	ansible-playbook \
 		--inventory inventories/${env}.yml \
-		cluster.yml
+		cluster.yml -vv
 
 console:
 	ansible-console \
