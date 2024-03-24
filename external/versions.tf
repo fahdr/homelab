@@ -1,9 +1,9 @@
 terraform {
-  required_version = "~> 1.6.0"
+  required_version = "~> 1.6.4"
 
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "khuedoan"
+    organization = "themainfreak"
 
     workspaces {
       name = "homelab-external"
@@ -36,4 +36,5 @@ provider "cloudflare" {
 provider "kubernetes" {
   # Use KUBE_CONFIG_PATH environment variables
   # Or in cluster service account
+  config_path="/root/homelab/metal/kubeconfig.yaml"
 }

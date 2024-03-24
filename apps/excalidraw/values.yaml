@@ -18,10 +18,10 @@ app-template:
       className: nginx
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
-        external-dns.alpha.kubernetes.io/target: homelab-tunnel.media.thmeainfreak.com
+        external-dns.alpha.kubernetes.io/target: homelab-tunnel.themainfreak.com
         external-dns.alpha.kubernetes.io/cloudflare-proxied: 'true'
       hosts:
-        - host: &host draw.media.thmeainfreak.com
+        - host: &host draw.themainfreak.com
           paths:
             - path: /
               pathType: Prefix

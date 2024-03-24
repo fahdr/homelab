@@ -33,6 +33,7 @@ tools:
 		--tty \
 		--network host \
 		--env "KUBECONFIG=${KUBECONFIG}" \
+		--env "NIXPKGS_ALLOW_UNFREE=1" \
 		--volume "/var/run/docker.sock:/var/run/docker.sock" \
 		--volume $(shell pwd):$(shell pwd) \
 		--volume ${HOME}/.ssh:/root/.ssh \
@@ -40,7 +41,7 @@ tools:
 		--volume homelab-tools-cache:/root/.cache \
 		--volume homelab-tools-nix:/nix \
 		--workdir $(shell pwd) \
-		docker.io/nixos/nix nix --experimental-features 'nix-command flakes' develop
+		docker.io/nixos/nix sh -c "env NIXPKGS_ALLOW_UNFREE=1 nix --experimental-features 'nix-command flakes' develop --impure"
 
 test:
 	make -C test
