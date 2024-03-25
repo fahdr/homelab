@@ -1,4 +1,4 @@
-module git.themainfreak.com/khuedoan/homelab/platform/secret-generator
+module git.media.themainfreak.com/khuedoan/homelab/platform/secret-generator
 
 go 1.19
 

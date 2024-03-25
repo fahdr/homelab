@@ -1,5 +1,5 @@
 data "cloudflare_zone" "zone" {
-  name = "themainfreak.com"
+  name = "media.themainfreak.com"
 }
 
 data "cloudflare_api_token_permission_groups" "all" {}

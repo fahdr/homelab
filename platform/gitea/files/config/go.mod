@@ -1,4 +1,4 @@
-module git.themainfreak.com/khuedoan/homelab/gitea/config
+module git.media.themainfreak.com/khuedoan/homelab/gitea/config
 
 go 1.19
 
