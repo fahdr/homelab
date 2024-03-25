@@ -57,42 +57,42 @@ app-template:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - host: &jellyfinHost jellyfin.media.themainfreak.com
+        - host: &jellyfinHost jellyfin.themainfreak.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: http
-        - host: &transmissionHost transmission.media.themainfreak.com
+        - host: &transmissionHost transmission.themainfreak.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: transmission
-        - host: &prowlarrHost prowlarr.media.themainfreak.com
+        - host: &prowlarrHost prowlarr.themainfreak.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: prowlarr
-        - host: &radarrHost radarr.media.themainfreak.com
+        - host: &radarrHost radarr.themainfreak.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: radarr
-        - host: &sonarrHost sonarr.media.themainfreak.com
+        - host: &sonarrHost sonarr.themainfreak.com
           paths:
             - path: /
               pathType: Prefix
               service:
                 name: main
                 port: sonarr
-        - host: &jellyseerrHost jellyseerr.media.themainfreak.com
+        - host: &jellyseerrHost jellyseerr.themainfreak.com
           paths:
             - path: /
               pathType: Prefix

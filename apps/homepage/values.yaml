@@ -19,7 +19,7 @@ app-template:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - host: &host home.media.themainfreak.com
+        - host: &host home.themainfreak.com
           paths:
             - path: /
               pathType: Prefix
@@ -61,76 +61,76 @@ app-template:
         services.yaml: |
           - Popular:
             - Matrix:
-                href: https://chat.media.themainfreak.com
+                href: https://chat.themainfreak.com
                 description: Chat client
                 icon: element.svg
             - Jellyfin:
-                href: https://jellyfin.media.themainfreak.com
+                href: https://jellyfin.themainfreak.com
                 description: Media system (movies, music, etc.)
                 icon: jellyfin.svg
             - Jellyseerr:
-                href: https://jellyseerr.media.themainfreak.com
+                href: https://jellyseerr.themainfreak.com
                 description: Request media
                 icon: jellyseerr.svg
             - Paperless:
-                href: https://paperless.media.themainfreak.com
+                href: https://paperless.themainfreak.com
                 description: Document management system
                 icon: paperless.svg
           - Management:
             - Transmission:
-                href: https://transmission.media.themainfreak.com
+                href: https://transmission.themainfreak.com
                 description: Bittorrent client
                 icon: transmission.svg
             - Prowlarr:
-                href: https://prowlarr.media.themainfreak.com
+                href: https://prowlarr.themainfreak.com
                 description: Indexer manager
                 icon: prowlarr.svg
             - Radarr:
-                href: https://radarr.media.themainfreak.com
+                href: https://radarr.themainfreak.com
                 description: Movie manager
                 icon: radarr.svg
             - Sonarr:
-                href: https://sonarr.media.themainfreak.com
+                href: https://sonarr.themainfreak.com
                 description: TV show manager
                 icon: sonarr.svg
             - Kanidm:
-                href: https://auth.media.themainfreak.com
+                href: https://auth.themainfreak.com
                 description: Identity management
-                icon: https://auth.media.themainfreak.com/pkg/img/logo-square.svg
+                icon: https://auth.themainfreak.com/pkg/img/logo-square.svg
           - Development:
             - Gitea:
-                href: https://git.media.themainfreak.com
+                href: https://git.themainfreak.com
                 description: Git forge
                 icon: gitea.svg
             - Woodpecker:
-                href: https://ci.media.themainfreak.com
+                href: https://ci.themainfreak.com
                 description: Continuous integration
                 icon: woodpecker-ci.svg
             - ArgoCD:
-                href: https://argocd.media.themainfreak.com
+                href: https://argocd.themainfreak.com
                 description: Continuous deployment
                 icon: argocd.svg
             - Registry:
-                href: https://registry.media.themainfreak.com
+                href: https://registry.themainfreak.com
                 description: Container registry
                 icon: docker.svg
             - Grafana:
-                href: https://grafana.media.themainfreak.com
+                href: https://grafana.themainfreak.com
                 description: Observability dashboards
                 icon: grafana.svg
           - Utilities:
             - Excalidraw:
-                href: https://draw.media.themainfreak.com
+                href: https://draw.themainfreak.com
                 description: Virtual whiteboard
                 icon: excalidraw.svg
             - Speedtest:
-                href: https://speedtest.media.themainfreak.com
+                href: https://speedtest.themainfreak.com
                 description: Internal network speed test
                 icon: openspeedtest.png
         bookmarks.yaml: |
           - Homelab:
             - Documentation:
-              - href: https://homelab.media.themainfreak.com
+              - href: https://homelab.themainfreak.com
                 icon: google-docs.svg
             - Public homelab repository:
               - href: https://github.com/khuedoan/homelab
